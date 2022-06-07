@@ -26,3 +26,6 @@ The [Objects](https://learn.liferay.com/dxp/latest/en/building-applications/obje
   - Provincia: ID of the Provincia it belongs. It's made from the relationship made in Provincia
   - ComunidadCentro: ID of the Comunidad it belongs. It's made from the relationship made in Comunidad.
   
+In order to make the app work a couple changes have to be made in the [api.js](src/common/services/liferay/api.js) file to be able to access the API Rest:
+1. Change the credentials used in [line 5](https://github.com/FranciscoGarciaNavarrete/buscador-centros/blob/main/src/common/services/liferay/api.js#L5) to the ones used in the environment where the app is running
+2. Change the variable [apiPath](https://github.com/FranciscoGarciaNavarrete/buscador-centros/blob/main/src/common/services/liferay/api.js#L9) value to API's URL
