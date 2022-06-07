@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.select-container select{
+  background-color: transparent;
+  appearance: none;
+  width: 100%;
+  padding: 0.6875rem 2.5rem 0.6875rem 0.9375rem;
+  color: #818a91;
+  box-shadow: 0 0 10px 0 rgba(0, 44, 88, 0.1) !important;
+  border: 1px solid lightgray;
+  max-width: 26.875rem;
+}
+
+.select-container:after{
+  position: absolute;
+  content: "";
+  background-image: url(https://www2.cruzroja.es/o/cruzroja-web-theme/images/custom/icons/arrow-down.svg);
+  background-size: 0.9375rem 0.9375rem;
+  background-repeat: no-repeat;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  right: 0.625rem;
+  z-index: 1;
+  top: 2.6rem;
+  transition: 1s;
+  pointer-events:none;
+}
+
+.search-field {
+  margin-bottom: 1.875rem;
+}
+
+.search-field p{
+  margin: 0px;
+}
